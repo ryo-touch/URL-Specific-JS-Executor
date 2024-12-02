@@ -16,6 +16,10 @@
       "matches": ["*://hojingpt.com/*"],
       "js": ["hojingpt-delete-toolbar.js"]
     }
+    {
+      "matches": ["https://www.dropbox.com/transfer/*"],
+      "js": ["dropbox_transfer.js"]
+    }
   ],
   "action": {
     "default_popup": "popup.html",
