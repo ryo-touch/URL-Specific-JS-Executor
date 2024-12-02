@@ -13,11 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://hojingpt.com/*"],
-      "js": ["hojingpt-delete-toolbar.js"]
-    }
-    ,{
-      "matches": ["https://www.dropbox.com/transfer/*"],
+      "matches": ["*://www.dropbox.com/*"],
       "js": ["dropbox_transfer.js"]
     }
   ],
