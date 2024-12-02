@@ -18,7 +18,7 @@ manifest.json の `content_scripts` を以下のように編集する。
       "matches": ["*://example1.com/*"],
       "js": ["javascript1.js"]
     }
-    {
+    ,{
       "matches": ["*://example2.com/*"],
       "js": ["javascript2.js"]
     }
