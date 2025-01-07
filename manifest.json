@@ -14,7 +14,11 @@
   "content_scripts": [
     {
       "matches": ["*://www.dropbox.com/*"],
-      "js": ["dropbox_transfer.js"]
+      "js": ["dropboxTransfer.js"]
+    }
+    ,{
+      "matches": ["*://sales-analytics.bell-face.com/*"],
+      "js": ["bellFace.js"]
     }
   ],
   "action": {
