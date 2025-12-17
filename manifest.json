@@ -20,6 +20,10 @@
       "matches": ["*://sales-analytics.bell-face.com/*"],
       "js": ["bellFace.js"]
     }
+    ,{
+      "matches": ["*://meet.google.com/*"],
+      "js": ["googleMeetAutoRecord.js"]
+    }
   ],
   "action": {
     "default_popup": "popup.html",
