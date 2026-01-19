@@ -24,6 +24,13 @@
       "matches": ["*://meet.google.com/*"],
       "js": ["googleMeetAutoRecord.js"]
     }
+    ,{
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.google.co.jp/search*"
+      ],
+      "css": ["google_rank.css"]
+    }
   ],
   "action": {
     "default_popup": "popup.html",
