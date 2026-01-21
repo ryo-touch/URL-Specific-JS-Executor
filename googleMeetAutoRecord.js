@@ -1,3 +1,9 @@
+// "content_scripts": [
+//   {
+//     "matches": ["*://meet.google.com/*"],
+//     "js": ["googleMeetAutoRecord.js"]
+//   }
+
 (function() {
   // Configuration object
   const CONFIG = {

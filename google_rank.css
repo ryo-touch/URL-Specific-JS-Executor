@@ -1,6 +1,16 @@
 /* google_rank */
 /* Google検索結果(SERPs)の順位を表示する */
 
+/* "content_scripts": [
+  {
+    "matches": [
+      "*://www.google.com/search*",
+      "*://www.google.co.jp/search*"
+    ],
+    "css": ["google_rank.css"]
+  }
+] */
+
 /* カウンターを初期化 */
 body {
   counter-reset: result !important;
@@ -19,6 +29,3 @@ h3.LC20lb:before {
   background: #fbe4c2;
   margin-right: 1em;
 }
-
-/* 次で始まるURL */
-/* https://www.google.com */

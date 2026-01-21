@@ -1,3 +1,10 @@
+// "content_scripts": [
+//   {
+//     "matches": ["*://www.dropbox.com/*"],
+//     "js": ["dropboxTransfer.js"]
+//   }
+// ]
+
 (function() {
   const updateStyles = () => {
     const selectors = {
