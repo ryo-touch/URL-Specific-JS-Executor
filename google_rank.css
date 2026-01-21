@@ -1,0 +1,31 @@
+/* google_rank */
+/* Google検索結果(SERPs)の順位を表示する */
+
+/* "content_scripts": [
+  {
+    "matches": [
+      "*://www.google.com/search*",
+      "*://www.google.co.jp/search*"
+    ],
+    "css": ["google_rank.css"]
+  }
+] */
+
+/* カウンターを初期化 */
+body {
+  counter-reset: result !important;
+}
+
+/* 検索結果コンテナ (.MjjYud) でカウンターをインクリメント */
+/* h3.LC20lb を含むコンテナのみをカウント対象とする */
+.MjjYud:has(h3.LC20lb) {
+  counter-increment: result !important;
+}
+
+/* 検索結果タイトルの前に順位番号を表示 */
+h3.LC20lb:before {
+  content: counter(result) ". " !important;
+  display: inline-block;
+  background: #fbe4c2;
+  margin-right: 1em;
+}

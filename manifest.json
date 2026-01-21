@@ -13,16 +13,15 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.dropbox.com/*"],
-      "js": ["dropboxTransfer.js"]
-    }
-    ,{
-      "matches": ["*://sales-analytics.bell-face.com/*"],
-      "js": ["bellFace.js"]
-    }
-    ,{
       "matches": ["*://meet.google.com/*"],
       "js": ["googleMeetAutoRecord.js"]
+    }
+    ,{
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.google.co.jp/search*"
+      ],
+      "css": ["google_rank.css"]
     }
   ],
   "action": {
